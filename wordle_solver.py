@@ -24,7 +24,7 @@ for word in words: #all valid wordle words
       index = 0
       for letter in exact: #compare letter of potential word to letter of actual word using index
         if letter != 0: #skip if we do not know it
-          if letter is not exact[index]:
+          if letter is not word[index]:
             break
         index += 1
       else:
